@@ -1,0 +1,13 @@
+h1 {
+color:red;
+}
+h1 {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+}
+.register {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+}

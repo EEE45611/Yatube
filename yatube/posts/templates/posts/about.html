@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    <h4>о нас</h4>
+{% extends "posts/base.html"%}
+{% load static %}
+{% block body %}
+    <h1>о нас</h1>
     <h2>это демонстративный сайт про создание блогов</h2>
-          <a href="http://127.0.0.1:8000">Главная</a>
-</body>
-</html>
+    <a href="http://127.0.0.1:8000">Главная</a>
+{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'posts/css/about.css' %}">
+{% endblock %}

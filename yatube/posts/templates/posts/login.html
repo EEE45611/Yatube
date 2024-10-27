@@ -1,19 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    <h1>Вход\Login</h1>
-          <a href="http://127.0.0.1:8000">Главная</a>
-<div><label for="name">Name:</label></div>
+{% extends "posts/base.html"%}
+{% load static %}
+{% block body %}
+        <h1>Вход\Login</h1>
+    <a href="http://127.0.0.1:8000">Главная</a>
+    <div class="login">
+        <div><label for="name">Name:</label></div>
+        <div><input type="text" id="name" name="name" required minlength="4" maxlength="20" size="18" /></div>
+        <div><label for="password">Password:</label></div>
+        <div><input type="text" password="password" required minlength="8" maxlength="20" size="18" /></div>
+    </div>
 
-<div><input type="text" id="name" name="name" required minlength="4" maxlength="20" size="18" /></div>
 
-<div><label for="password">Password:</label></div>
-
-<div><input type="text" password="password" required minlength="8" maxlength="20" size="18" /></div>
-
-</body>
-</html>
+{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'posts/css/login.css' %}">
+{% endblock %}

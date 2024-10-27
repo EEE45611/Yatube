@@ -1,0 +1,22 @@
+
+.index {
+  position: absolute;
+  top: 0%;
+  left: 85%;
+}
+html{
+
+
+background:gray}
+.splash {
+bottom: 0;
+left: 0;
+right: 0;
+z-index: -900;
+background-image: url('https://atg-auto.ru/upload/iblock/a7b/a7b119dacc43e6abc032d3d00ce59a7c.jpg');
+background-size: cover;
+height: 100%;
+position: absolute;
+width: 100%;
+background-size: 100% 100%
+}

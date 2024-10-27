@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "posts/base.html"%}
+{% load static %}
+{% block body %}
     <h1>Посты\posts</h1>
-          <a href="http://127.0.0.1:8000">Главная</a>
-</body>
-</html>
+    <a href="http://127.0.0.1:8000">Главная</a>
+{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'posts/css/posts.css' %}">
+{% endblock %}

@@ -1,0 +1,25 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'posts/css/base.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>😎😎😎😎</title>
+    {% block css %}  {% endblock %}
+</head>
+<body>
+    <div class="splash"></div>
+    <div class="index">
+        <li><a href="http://127.0.0.1:8000/about">о сайте\About site</a></li>
+        <li><a href="http://127.0.0.1:8000/posts">Посты\Posts</a></li>
+        <li><a href="http://127.0.0.1:8000/register">зарегестрироваться\register</a></li>
+        <li><a href="http://127.0.0.1:8000/login">войти\login</a></li>
+    </div>
+{% block body %}
+
+{% endblock %}
+</body>
+</html>
