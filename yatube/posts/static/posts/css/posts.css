@@ -6,3 +6,28 @@ h1 {
   top: 0%;
   left: 45%;
 }
+.comment {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+.author {
+font-weight: bold;
+}
+.date {
+color: hsla(237deg 74% 33% / 61%);
+}
+.allcomments {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+
+}
+
+.roblox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: black;
+}

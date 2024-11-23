@@ -3,6 +3,16 @@
 {% block body %}
     <h1>Посты\posts</h1>
     <a href="http://127.0.0.1:8000">Главная</a>
+<!--<div class="allcomments">-->
+
+    {% for comment in comments %}
+<!--    <div class="comment">-->
+        <p><span class="author">{{ comment.author }}</span> <span class="date">{{ comment.date }}</span></p>
+        <p>{{ comment.text }}</p>
+<!--    </div>-->
+<div class="roblox">123</divlass>
+    {% endfor %}
+<!--    </div>-->
 {% endblock %}
 {% block css %}
     <link rel="stylesheet" href="{% static 'posts/css/posts.css' %}">
